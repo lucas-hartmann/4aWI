@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe 10</title>
+</head>
+
+<body>
+    <script>
+        let config = {
+
+            startday: 0,
+
+            month: [
+                { name: "Jan", day: 31 },
+                { name: "Feb", day: 28 },
+                { name: "Mar", day: 31 },
+                { name: "Apr", day: 30 },
+                { name: "Mai", day: 31 },
+                { name: "Jun", day: 30 },
+                { name: "Jul", day: 31 },
+                { name: "Aug", day: 31 },
+                { name: "Sep", day: 30 },
+                { name: "Okt", day: 31 },
+                { name: "Nov", day: 30 },
+                { name: "Dez", day: 31 }
+            ],
+
+            week: ["MO", "DI", "MI", "DO", "FR", "SA", "SO"],
+
+        }
+
+        function printMonth() {
+            if (startday < config.month.day) {
+                console.log(" | ")
+                for (i = 0; i < 8; i++) {
+                    startday++;
+                    console.log(startday + " | ")
+                }
+            }
+        }
+        printMonth();
+
+    </script>
+</body>
+
+</html>

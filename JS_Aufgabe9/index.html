@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe 9</title>
+</head>
+<body>
+    <script>
+        //Aufgabe 1
+        let x = "";
+        let o = "";
+        for (let row = 0; row < 4; row++)
+        {
+            if(row%2 == 0)
+            {
+                console.log("X X X X")
+            }
+            else console.log("O O O O")
+        }
+
+        //Aufgabe 2
+        var count;
+        var number = 0;
+        for (count = 0; count < 101; count++) {
+        if(count%2 == 0)
+        {
+            number += count;
+        }
+        }
+        console.log(number);
+
+        //Aufgabe 3
+        for(i=0; i < 4; i++)
+        {
+            if(i%2 == 0)
+            {
+                console.log("X")
+            }
+            else console.log("O")
+        }
+        console.log("X   O   X");
+    </script>
+</body>
+</html>
