@@ -1,25 +1,26 @@
 let config = {
 
-    offset: 0,
+    offset: 3,
 
     month: [
-        { name: "Jan", day: 31 },
-        { name: "Feb", day: 28 },
-        { name: "Mar", day: 31 },
-        { name: "Apr", day: 30 },
-        { name: "Mai", day: 31 },
-        { name: "Jun", day: 30 },
-        { name: "Jul", day: 31 },
-        { name: "Aug", day: 31 },
-        { name: "Sep", day: 30 },
-        { name: "Okt", day: 31 },
-        { name: "Nov", day: 30 },
-        { name: "Dez", day: 31 }
+        { name: "Jan", days: 31 },
+        { name: "Feb", days: 28 },
+        { name: "Mar", days: 31 },
+        { name: "Apr", days: 30 },
+        { name: "Mai", days: 31 },
+        { name: "Jun", days: 30 },
+        { name: "Jul", days: 31 },
+        { name: "Aug", days: 31 },
+        { name: "Sep", days: 30 },
+        { name: "Okt", days: 31 },
+        { name: "Nov", days: 30 },
+        { name: "Dez", days: 31 }
     ],
 
 }
 
-printMonth();
+
+printMonth(config.offset);
 
 function weekDay() {
     console.log("");
@@ -27,20 +28,49 @@ function weekDay() {
 }
 
 
-function printMonth() {
+function printMonth(offset) {
     for (i = 0; i < config.month.length; i++) {
         weekDay();
-        let day = config.month[i].day;
+        let days = config.month[i].days;
         let row = " | ";
-        for (j = 1; j <= day; j++) {
+        let j = 1;
+        let day = 1;
+
+        if (j != offset) {
+            do {
+                row += ("   | ");
+                j++;
+            }
+            while (j < offset);
+        }
+
+        for (j; j < (days + offset - 1); j++) {
+            row += (getDayFormatted(day) + " | ")
             if (j % 7 == 0) {
                 console.log(row)
                 row = (" | ")
             }
-            else {
-                row += (j + " | ")
-            }
+            day++;
         }
+
+        row += (getDayFormatted(day) + " | ")
+        console.log(row)
+        if ((day+offset) % 7 == 0) {
+            offset = 7;
+        }
+        else 
+        {
+            offset = ((day + offset) % 7);
+        }
+        day = 1;
+
     }
 }
+
+    function getDayFormatted(dayNr) {
+        if (dayNr < 10) {
+            dayNr = (" " + dayNr)
+        }
+        return dayNr;
+    }
 
