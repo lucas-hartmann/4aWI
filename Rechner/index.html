@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rechner</title>
+</head>
+
+<body>
+
+    <h1>xXRechn3rXx</h1>
+    <div id="content">
+        Number 1 <input type="text" id="number1" />
+
+        <label for="Operator">Choose a operation</label>
+        <select name="Operator" id="operation">
+            <option value="add">+</option>
+            <option value="neg">-</option>
+            <option value="multi">*</option>
+            <option value="div">/</option>
+        </select>
+
+        Number 2 <input type="text" id="number2" />
+        <button onclick="buttonClick()">Berechnen</button>
+    </div>
+    <div id="result"></div>
+    <div id="fehler"></div>
+
+</body>
+
+</html>
