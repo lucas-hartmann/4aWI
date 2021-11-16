@@ -45,7 +45,13 @@ function printMonth(offset) {
         }
 
         for (j; j < (days + offset - 1); j++) {
-            row += (getDayFormatted(day) + " | ")
+            if ((day + offset) % 7 == 0 || (day + offset) % 7 == 1) {
+                row += ("WE" + " | ")
+            }
+            else {
+                row += (getDayFormatted(day) + " | ")
+            }
+
             if (j % 7 == 0) {
                 console.log(row)
                 row = (" | ")
@@ -53,13 +59,17 @@ function printMonth(offset) {
             day++;
         }
 
-        row += (getDayFormatted(day) + " | ")
+        if ((day + offset) % 7 == 0 || (day + offset) % 7 == 1) {
+            row += ("WE" + " | ")
+        }
+        else {
+            row += (getDayFormatted(day) + " | ")
+        }
         console.log(row)
-        if ((day+offset) % 7 == 0) {
+        if ((day + offset) % 7 == 0) {
             offset = 7;
         }
-        else 
-        {
+        else {
             offset = ((day + offset) % 7);
         }
         day = 1;
@@ -67,10 +77,10 @@ function printMonth(offset) {
     }
 }
 
-    function getDayFormatted(dayNr) {
-        if (dayNr < 10) {
-            dayNr = (" " + dayNr)
-        }
-        return dayNr;
+function getDayFormatted(dayNr) {
+    if (dayNr < 10) {
+        dayNr = (" " + dayNr)
     }
+    return dayNr;
+}
 
