@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <h1>Passwort-Generator</h1>
+    <div id="password_generator">
+      
+        <div>
+            <input type="number" id="length" name="length" value="16" placeholder="Länge des Passworts" />
+        </div>
+
+        <div>
+            <input type="checkbox" id="low_characters" name="low_characters" checked value="on" />
+            <label for="low_characters">Lowercase Characters</label>
+        </div>
+        <div>
+            <input type="checkbox" id="upper_characters" name="upper_characters" checked value="on" />
+            <label for="upper_characters">Uppercase Characters</label>
+        </div>
+        <input type="checkbox" id="number_characters" name="number_characters" checked value="on" />
+        <label for="number_characters">Numbers</label>
+        <div>
+            <input type="checkbox" id="special_characters" name="special_characters" checked value="on" />
+            <label for="special_characters">Special Characters</label>
+        </div>
+        
+        <div>
+            <input type="text" id="pw_output" name="pw_output" value="" placeholder="Passwort" readonly />
+        </div>
+        <div>
+            <button id="generate_pw" onclick="generate_password()">Passwort generieren</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
