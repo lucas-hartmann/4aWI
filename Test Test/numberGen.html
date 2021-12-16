@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Generator</title>
+</head>
+<body>
+    <div>
+        <input type="number" id="fir" value="6" placeholder="Anfangszahl" />
+    </div>
+    <div>
+        <input type="number" id="sec" value="9" placeholder="Endzahl" />
+    </div>
+    <div>
+        <button id="generate" onclick="generate()">Reihenfolge generieren</button>
+    </div>
+    <ul id="output"></ul>
+
+    <script>
+
+        function generate(){
+            var fir = parseInt(document.getElementById("fir").value);
+            var sec = parseInt(document.getElementById("sec").value);
+            var strs = "";
+
+            if (fir<=sec)
+            {
+                for( i = fir ; i <= sec ;  i++ ){
+                    strs += "<li>" + i + "</li>"
+                }
+            }
+            else
+            {
+                for( i = sec ; i <= fir ;  i++ ){
+                    strs += "<li>" + i + "</li>"
+                }
+            }
+
+           document.getElementById("output").innerHTML = strs;
+        }
+
+    </script>
+
+</body>
+</html>

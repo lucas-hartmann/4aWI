@@ -77,8 +77,5 @@ String.prototype.shuffle = function () {
     return chars.join("");
 }
 
-function checkboxCheck() {
 
-
-}
 

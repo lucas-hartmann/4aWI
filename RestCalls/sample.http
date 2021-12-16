@@ -1,0 +1,4 @@
+GET https://api.football-data.org/v2/competitions/2002/teams HTTP/1.1
+Accept: application/json
+x-auth-token: 97848eae87a54d3781c5100431aaa273
+

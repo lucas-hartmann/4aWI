@@ -43,74 +43,37 @@ q:before, q:after {
 	content: none;
 }
 
+/*----------------------------------*/
 
-/*----------------------------------------------*/
-
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.wrap{
-    background-color: aqua;
-}
-.top {
-    background-color: pink;
+.top{
+    background-color: lightblue;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    height: 85vh;
+    padding: 0px;
+    height: 20vh;
 }
-.list{
-    background-color: blueviolet;
-    width: 400px;
-    height: 300px;
-    margin: 20px;
-    padding-left: 20px;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
 
-}
 .box{
     background-color: green;
     width: 30px;
     height: 30px;
-    margin:10px;
+    margin:20px;
     padding: 20px;
 }
 
-.bottom{
+.bot{
+    width: 15vw;
+    height: 30vh;
     background-color: red;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0px;
-}
-#pic{
-    width: 100px;
-    height: 100px;
-    
-}
-.right{
-    position: fixed;
-    bottom: 0px;
-    right:0px;
+    margin-top: 50vh;
 }
 
-#img{
-    width: 100px;
-    height: 100px;
-    padding-top: 200px;
-    
-}
-
-ul{
-    list-style-type: disc;
-    padding: 20px;
+.botbox{
+    width: 8vw;
+    height: 16vh;
+    background-color: blue;
+    position:relative;
+    top: -8vh;
 }
