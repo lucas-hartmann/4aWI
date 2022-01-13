@@ -12,9 +12,9 @@
 }
 
 .nav {
-    display: inline-flex;
-    align-items: baseline;
     padding-right: 20px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .list {
@@ -25,45 +25,45 @@ li {
     list-style-type: none;
 }
 
-button {
-    width: 220px;
-    margin-top: 10px;
-    display: inline-block;
-    border: 1px solid #0096ff;
-    background-color: #0096ff;
-    color: #ffffff;
-    padding: 8px 16px;
-    transition: background-color .5s, color .5s;
-}
-
 .content {
-    background-color: greenyellow;
+    /*background-color: greenyellow;*/
     height: 80vh;
     padding: 20px;
     color: black;
-    border: 1px solid #ec1f1fe0;
 }
 
 .request {
-    background-color: hotpink;
+    background-color: #cecece;
     padding: 20px;
 }
 
 .menuItems li {
     display: inline-block;
-    background-color: rgb(128, 128, 128);
     padding: 5px;
-    border-radius: 5px;
 }
 
-.menuItems a {}
+.menuItems {}
 
 .menuItems li:hover {
-    color: rgba(235, 235, 235, 0.616);
+    color: #cecece;
     cursor: pointer;
 }
 
 li {
     color: black;
     font-family: arial, sans-serif;
+}
+
+.request img {
+    position: relative;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+.request li {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    font-size: 30px;
 }

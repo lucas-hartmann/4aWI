@@ -1,0 +1,55 @@
+button {
+    width: 100;
+    margin-top: 5px;
+    display: inline-block;
+    border: 2px solid #000000;
+    background-color: #b90000;
+    color: #ffffff;
+}
+
+.wrap {
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+}
+
+.cage {
+    background-color: rgb(160, 231, 28);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    height: 150px;
+    width: 300px;
+    border: 2px solid #000000;
+}
+
+.left {
+    /*background-color: pink;*/
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    /*background-color: lightsalmon;*/
+}
+
+.output {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #000000;
+    background-color: white;
+}
+
+.input {
+    width: 100px;
+    margin: 5px;
+    height: 10%;
+}
