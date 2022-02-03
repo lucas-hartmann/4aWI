@@ -6,30 +6,30 @@ export default class ControllableRectangle extends Actor {
         this.x = 185;
         this.y = 185;
         let that = this;
-        document.addEventListener('keypress', (key) => {
-            if (key.key === 'w') {
+        document.addEventListener('keydown', (key) => {
+            if (key.key === 'ArrowUp' || key.key === 'w') {
                 that.y -= 20;
                 if (that.y < 0) {
                     that.y = 0;
                 }
-            } else if (key.key === 's') {
+            } else if (key.key === "ArrowDown" || key.key === 's') {
                 that.y += 20;
                 if (that.y > 370) {
                     that.y = 370;
                 }
-            } else if (key.key === 'a') {
+            } else if (key.key === 'ArrowLeft' || key.key === 'a') {
                 that.x -= 20;
                 if (that.x < 0) {
                     that.x = 0;
                 }
-            } else if (key.key === 'd') {
+            } else if (key.key === 'ArrowRight' || key.key === 'd') {
                 that.x += 20;
                 if (that.x > 370) {
                     that.x = 370;
                 }
             }
 
-        });
+        }, true);
     }
 
     render(context) {
