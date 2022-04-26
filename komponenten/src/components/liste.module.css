@@ -1,16 +1,32 @@
-.li{
+/*.li{
     background-color: rgb(13, 253, 105);
     width: 100px;
     height: 20px;
     list-style: none;
     margin: 1px;
     border: 1px solid #000000;
-}
+}*/
 
 .list{
-    display: flex;
+   /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     padding: 20px;
+}
+
+.list li{
+    background-color: rgb(18, 138, 126);
+    color: white;
+    text-align: left;
+    list-style-type: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    width: 160px;
+    padding: 30px;
+}
+
+.list li:hover{
+    background-color: rgb(43, 160, 148);
 }

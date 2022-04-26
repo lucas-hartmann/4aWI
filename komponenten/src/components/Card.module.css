@@ -1,0 +1,9 @@
+.div{
+    box-shadow: 5px 5px 5px grey;
+    width: 200px;
+    padding: 20px;
+}
+
+.name{
+    font-weight: 600;
+}
