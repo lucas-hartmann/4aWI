@@ -1,4 +1,4 @@
-GET https://fortniteapi.io/v2/shop HTTP/1.1
+GET https://fortniteapi.io/v1/stats?account=72173273f89e497a9de14a06c09c269f HTTP/1.1
 Accept: application/json
 Authorization: 7b3cd461-16583331-a6982f93-8d2e9834
 
