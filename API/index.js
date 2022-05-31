@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     res.json(books);
 });
 
-app.get('/book/:isbn', (req, res) => {
+app.get('/books/:id', (req, res) => {
     // Reading isbn from the URL
     const isbn = req.params.id;
 
@@ -45,7 +45,7 @@ app.post('/books/:id/:title', (req, res) => {
     res.send('Book is added to the database');
 });
 
-app.delete('/book/:id', (req, res) => {
+app.delete('/books/:id', (req, res) => {
     // Reading isbn from the URL
     const isbn = req.params.id;
 
